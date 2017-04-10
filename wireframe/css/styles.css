@@ -1,0 +1,91 @@
+/* Reset */
+{
+    header margin: 10
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+}
+body {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bold;
+
+body{
+    float: left
+}
+}
+
+nav > ul {
+    list-style-type: none;
+
+}
+
+/* Layout */
+
+header > h1 {
+    float: left;
+}
+
+header > nav {
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+
+.nav-item > a {
+    color: blue;
+}
+
+.hero {
+    clear: both;
+    text-align: center;
+}
+
+main {
+    width: 66%;
+    float: left;
+    margin: 10px;
+}
+
+aside {
+
+    width: 30%;
+    float: right;
+}
+
+footer {
+    clear: both;
+
+}
+
+nav {
+    float: right;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and  {max-width: 500
+
+}

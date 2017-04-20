@@ -15,7 +15,7 @@
     <p>
         Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.
     </p>
-</div id="box" class="boxes">
+
 <p class="important">This is also very important.</p>
 <br>
 <h1 id="second-example"></h1>
@@ -24,6 +24,9 @@
     <li class="codeup">Me</li>
     <li class="codeup">You</li>
 </ul>
+
+<button id="btn">Click Me</button>
+<button id="deleteBtn">Delete</button>
 
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -34,12 +37,11 @@
 
 <script>
     $(document).ready(function(){
-        console.log("ready");
 
-    $('.codeup').css('border', '1px red');
-    $('.li').css('font-size', '20px');
-    $('h1, p, li').css('background-color', "yellow");
-    alert($('h1').text());
+    $('#first-example').dblclick(function() {
+        alert('h1 with the id of first-example was double clicked!');
+         })
+
 
     });
 

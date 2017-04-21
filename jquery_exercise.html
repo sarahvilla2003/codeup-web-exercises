@@ -38,11 +38,9 @@
 <script>
     $(document).ready(function(){
 
-    $('#first-example').dblclick(function() {
-        alert('h1 with the id of first-example was double clicked!');
-         })
-
-
+    $('#first-example').click(function() {
+        $('#first-example').css('color', 'blue');
+    })
     });
 
 </script>

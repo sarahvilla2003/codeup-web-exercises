@@ -37,15 +37,22 @@
 
 <script>
     $(document).ready(function(){
+        "use strict";
 
     $('#first-example').click(function() {
-        $('#first-example').css('color', 'blue');
+        $('#first-example').css('background-color', 'blue');
     })
 
     $('p').dblclick(function(){
-        $('p').css('font-size', '18px');
+        $('this').css('font-size', '18px');
     });
 
+    $('li').hover(function() {
+        $('this').css('color', 'red');
+    });
+        (function() {
+            &('this').css('color', 'white');
+        });
     });
 
 </script>

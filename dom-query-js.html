@@ -7,6 +7,11 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="Main Header">Change Main Header</button>
+<button id="Id2">Login</button>
+<button id3="Id3">Login</button>
+<button id4="Id4">Login</button>
+
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -38,7 +43,6 @@
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById ('sub-header');
-        console.log(sub-header);
 
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color ="blue";
@@ -55,7 +59,7 @@
         // TODO: Set text color of li with dbid = 1 to blue
         for(var i=0; i >listItems.length; i +=2){
             if (listItems[i].getAttribute("data-dbid") ==="1") {
-                listItems[i].style.color.="blue";
+                listItems[i].style.color ="blue";
             }
         }
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -64,6 +68,18 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
         subParagraphs[0].innerText ="Mission Accomplished!";
+        var id1 = document.getElementById("login1");
+        id1.addEventListener(click,listener, false);
+        var listner = function (event) {
+        alert ('You clicked the button!');
+        }
+        document.getElementById ('id1').addEventListner('click',listner, false);
+//function to change list items
+        function changeListItems(){
+            vor (var i=0; i < listItems.length; i++){
+                if(listItems [i].getAttribute("data-dbid"))
+            }
+        }
 
     })();
 </script>

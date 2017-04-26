@@ -1,0 +1,23 @@
+//single argument with .fail () and .always () methods
+
+$ajax({
+    "url": "http://swapi.co/api/films,
+    "type
+
+
+//Url first argument and configuation object second argument
+
+//Storing returned jQuery XML HTTP Response Object
+var jqXhr= $.ajax("http://swapi.co/api/films", {
+    "type": "GET",
+    "data": {
+        "search": "A New Hope"
+    }
+
+//GET short-hand method
+$.get("http://swapi.co/api/films", {
+    "data": {
+        "search": "A New Hope"
+    }
+}).done(function(data){
+    console.log"

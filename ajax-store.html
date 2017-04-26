@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<div>
+    <table id="products">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Categories</th>
+            </tr>
+        </thead>
+        <tbody id="insertProducts">
+            <tr>
+                <td>Hammer</td>
+                <td>25</td>
+                <td>20</td>
+                <td>Tool</td>
+            </tr>
+            <tr>
+                <td>Drill</td>
+                <td>5</td>
+                <td>100</td>
+                <td>Tool</td>
+                <td>Powered</td>
+            </tr>
+            <tr>
+                <td>Mower</td>
+                <td>5</td>
+                <td>200</td>
+                <td>Tool</td>
+                <td>Gas</td>
+                <td>Outdoor</td>
+            </tr>
+            <tr>
+                <td>Screwdrivers</td>
+                <td>25</td>
+                <td>10</td>
+                <td>Tool</td>
+            </tr>
+//var data={
+//        headers: ['Title', 'Quantity', 'Price', 'Category'
+//        values: [['Hammer', '25', '20', 'Tool'],
+ //                ['Drill', '5', '100', 'Tool, Powered'],
+//                 ['Mower', '5', '200', 'Tool, Outdoor, Gas'],
+//                 ['Screwdrivers', '25', '10', 'Tool']]
+
+
+
+        </tbody>
+    </table>
+</div>
+<p>
+    <button id="btn-search">Search</button>
+    <button id="btn-refresh">Refresh</button>
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    "use strict";
+    // TODO: Create an ajax GET request for /data/inventory.json
+
+$('#btn-search').click(function(){
+    $.ajax("data/inventory.json").done(function(data) {
+        console.log(data);
+ // Try console logging different parts of the data array of objects, like hammer.
+        console.log()
+    });
+
+});
+
+var title=['hammer', 'drill', 'mower', 'screwdriver'];
+console.log(title.length);
+var quantity=[];
+console.log(quantity.length);
+var price=[];
+var categories=['tool', 'gas', 'outdoor','powered'];
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+});
+</script>
+
+</body>
+</html>

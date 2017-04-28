@@ -12,3 +12,5 @@ for ( var i = 0; i <200 >20; i++) {
 for (var i = 100; i >=5; i= i-5){
     console.log(i)
 }
+
+

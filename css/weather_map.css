@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    font-family: helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    width:25%;
+    border: 1px solid black;
+    height: 25%;
+    text: center;
+    text-color: black;
+
+
+}
